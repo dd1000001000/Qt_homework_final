@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1800</width>
+    <height>1200</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>职工管理系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="showworkers">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1800</width>
+      <height>1200</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionf1"/>
+    <addaction name="separator"/>
+    <addaction name="actionf2"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>管理职工</string>
+    </property>
+    <addaction name="actionadd"/>
+    <addaction name="actiondel"/>
+    <addaction name="actionshowall"/>
+    <addaction name="actionshowon"/>
+    <addaction name="actioncompare"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>退出程序</string>
+    </property>
+    <addaction name="actionexit"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <action name="actionf1">
+   <property name="text">
+    <string>打开文件</string>
+   </property>
+  </action>
+  <action name="actionf2">
+   <property name="text">
+    <string>保存信息</string>
+   </property>
+  </action>
+  <action name="actionadd">
+   <property name="text">
+    <string>添加职工</string>
+   </property>
+  </action>
+  <action name="actiondel">
+   <property name="text">
+    <string>删除职工</string>
+   </property>
+  </action>
+  <action name="actionshowall">
+   <property name="text">
+    <string>显示所有职工信息</string>
+   </property>
+  </action>
+  <action name="actionshowon">
+   <property name="text">
+    <string>显示特定职工月工资信息</string>
+   </property>
+  </action>
+  <action name="actionexit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actioncompare">
+   <property name="text">
+    <string>对比工资</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
